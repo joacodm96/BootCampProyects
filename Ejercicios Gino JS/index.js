@@ -23,11 +23,14 @@ console.log(abs(1), abs(-6), abs(0));
 
 //4 Crear una funcion que tome un arreglo de numeros y devuelva su valor absoluto
 
+//const absArray = (numbers) => {
+//    return numbers(Math.abs([numbers]));
+//}
 const absArray = (numbers) => {
-    return (Math.abs([numbers]));
+    return numbers.map(abs);
 }
 
-console.log("Obtencion de Array Absoluto.(Math.abs en [] retorna NaN");
+console.log("Obtencion de Array Absoluto. [1,-6,0]");
 console.log(absArray([1, -6, 0]));
 
 // Extra

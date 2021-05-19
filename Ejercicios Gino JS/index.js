@@ -35,19 +35,17 @@ console.log(absArray([1, -6, 0]));
 
 
 const sum = (numbers) => {
-    return numbers.reduce((suma, num) => suma + num);
+    return numbers.reduce((acum, num) => acum + num);
 }
 console.log("Suma de los elementos de un arreglo");
 console.log(sum([3, 2, 1, 5]));
 
 // Ahora hacer lo mismo pero sin usar ningúna otra función o sentencia
 // Ni reduce, ni forEach, ni for
-const sumNoFunctions = (numbers) => {
-    if (numbers.length === 0)
-        return 0;
-    else
-        return numbers[0] + sum(numbers.slice(1));
 
+const sumNoFunctions = (numbers) => {
+    return numbers[0] + sum(numbers.slice(1, numbers.length));
 }
+
 console.log("Suma de un arreglo sin funciones sobre el arreglo.")
 console.log(sumNoFunctions([3, 2, 1, 4]));

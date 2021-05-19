@@ -86,9 +86,7 @@ const movie5 = {
 }
 
 /// Creacion del Arreglo
-const biblioMovies = [];
-/// Pusheando las peliculas en mi Arreglo
-biblioMovies.push(movie1, movie2, movie3, movie4, movie5);
+const biblioMovies = [movie1, movie2, movie3, movie4, movie5];
 /// Mostrando en la consola todas las peliculas
 console.log('arreglo de peliculas', biblioMovies);
 

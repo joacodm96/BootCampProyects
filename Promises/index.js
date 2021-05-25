@@ -33,7 +33,7 @@ const isPair = ((num) => {
 })
 
 
-isPair(3)
+isPair(2)
     .then(result => console.log(result))
     .catch(error => console.log('Invalid Value'))
     .finally(() => console.log("IsPair Function End"));
@@ -105,7 +105,7 @@ const products = [{
 
 const filterPrice = async(number) => {
     const promiseFilter = new Promise((resolve, reject) => {
-        setTimeout(async() => {
+        setTimeout(() => {
             const filteredArray = products.filter(({ price }) => {
                 return price <= number;
             })
@@ -114,10 +114,15 @@ const filterPrice = async(number) => {
         }, 5000)
     });
     let filter = await promiseFilter;
+
+    if (filter.length === 0)
+        console.log("No matches found");
+
     return filter;
+
 
 }
 
-filterPrice(250)
+filterPrice(2)
     .then((filter) => console.log(filter))
-    .finally(() => console.log("FilterPrice function End"));
+    .finally(() => console.log("FilterPrice Function End"));

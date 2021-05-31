@@ -1,0 +1,37 @@
+.image-item {
+    height: 200px;
+    margin: 12px;
+    box-shadow: 0px 0px 6px 2px #1d1d1d;
+}
+
+body {
+    text-align: center;
+    font-size: 25px;
+}
+
+#search-btn {
+    border-radius: 4px;
+    background-color: white;
+    color: black;
+    border: 2px solid blueviolet;
+    transition-duration: 0.4s;
+}
+
+#search-btn:hover {
+    background-color: blueviolet;
+    color: white;
+}
+
+#next-page-btn {
+    border-radius: 4px;
+    background-color: white;
+    color: black;
+    border: 2px solid blueviolet;
+    margin-left: 170px;
+    transition-duration: 00.4s;
+}
+
+#next-page-btn:hover {
+    background-color: blueviolet;
+    color: white;
+}
